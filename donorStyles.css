@@ -1,0 +1,194 @@
+/* donorStyles.css */
+
+/* Base Styles */
+body {
+    background-color: black;
+    color: green;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: color-change 3s infinite;
+    font-family: cursive;
+}
+
+.color-changing-line {
+    width: 60%;
+    border: none;
+    height: 4px;
+    background: orange;
+    animation: color-change 3s infinite;
+    margin-bottom: 20px;
+}
+
+.chakra {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.chakri {
+    width: 180px;
+    height: auto;
+    animation: rotate 4s linear infinite;
+}
+
+li {
+    color: orange;
+}
+
+.identity-list {
+    list-style-type: none;
+    margin: 5px;
+    padding: 50px;
+    font-size: 1.5em;
+    margin-bottom: 19px;
+    font-family: cursive;
+}
+
+.identity-list li {
+    margin-bottom: 20px;
+    color: orange;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo-img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+}
+
+@keyframes color-change {
+    0% { color: orange; }
+    33% { color: white; }
+    66% { color: green; }
+    100% { color: orange; }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Media Queries */
+
+/* Tablets (min-width: 768px) */
+@media (min-width: 768px) {
+    .heading {
+        font-size: 5em;
+    }
+
+    .identity-list {
+        font-size: 1.2em;
+        padding: 30px;
+    }
+
+    .chakra {
+        top: 20px;
+        left: 20px;
+    }
+
+    .logo {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* Desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .heading {
+        font-size: 6em;
+    }
+
+    .identity-list {
+        font-size: 1.3em;
+        padding: 40px;
+    }
+
+    .chakra {
+        top: 30px;
+        left: 30px;
+    }
+
+    .logo {
+        top: 30px;
+        right: 30px;
+    }
+}
+
+/* Large Desktops (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .heading {
+        font-size: 6em;
+    }
+
+    .identity-list {
+        font-size: 1.5em;
+        padding: 50px;
+    }
+
+    .chakra {
+        top: 40px;
+        left: 40px;
+    }
+
+    .logo {
+        top: 40px;
+        right: 40px;
+    }
+}
+
+/* Mobile Phones (max-width: 767px) */
+@media (max-width: 767px) {
+    .heading {
+        font-size: 2.5em;
+    }
+
+    .color-changing-line {
+        width: 80%;
+    }
+
+    .identity-list {
+        font-size: 1em;
+        padding: 20px;
+    }
+
+    .chakra {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 0 auto;
+    }
+
+    .logo {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 20px auto;
+    }
+
+    .logo-img {
+        width: 150px;
+    }
+}

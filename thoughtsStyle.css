@@ -1,0 +1,90 @@
+body {
+    background-color:black;
+    color: green;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 6em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: color-change 3s infinite;
+    font-family: cursive;
+}
+
+
+
+.color-changing-line {
+    width: 80%;
+    border: none;
+    height: 4px;
+    background: orange;
+    animation: color-change 3s infinite;
+    margin-bottom: 20px;
+}
+
+
+.chakra {
+   
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.chakri{
+    width: 180px; 
+    height: auto;
+    animation: rotate 4s linear infinite;
+}
+
+li{
+    color: orange;
+}
+
+.identity-list {
+    list-style-type: none;
+    margin: 5px;
+    padding: 50px;
+    font-size: 1.5em;
+    margin-bottom: 19px ;
+    font-family: cursive;
+}
+
+.identity-list li {
+    margin-bottom: 20px;
+    color: orange;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo-img{
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+}
+@keyframes color-change {
+    0% { color: orange; }
+    33% { color: white; }
+    66% { color: green; }
+    100% { color: orange; }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
